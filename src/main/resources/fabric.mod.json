@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "example_mod",
+	"id": "incandescent",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Incandescent",
+	"description": "Aims to improve performance and fix bugs of light engine in legacy minecraft.",
 	"authors": [
 		"Me!"
 	],
@@ -12,19 +12,19 @@
 		"sources": "https://github.com/OrnitheMC/ornithe-template-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/example_mod/icon.png",
+	"icon": "assets/incandescent/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"init": [
-			"com.example.example_mod.ExampleMod"
+			"com.backslashashley.incandescent.Incandescent"
 		]
 	},
 	"mixins": [
-		"example_mod.mixins.json"
+      "incandescent.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.21",
-		"minecraft": "1.7.2",
-		"osl-entrypoints": ">=0.4.0"
+    "fabricloader": ">=0.16.9",
+    "minecraft": "1.12.2",
+    "osl-entrypoints": ">=0.4.0"
 	}
 }
